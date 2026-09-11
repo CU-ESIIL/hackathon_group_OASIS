@@ -4,7 +4,7 @@
 
 ## Completion coach
 
-- ⚠ **Project title is customized:** Replace the default H1 and front-matter title with the team’s project name.
+- ✓ **Project title is customized**
 - ⚠ **Working question is written:** State one question narrow enough to investigate during the event.
 - ⚠ **Main evidence is documented:** Complete the Data and Evidence row: dataset, source, place, period, and meaning.
 - ⚠ **Main artifact is linked:** Link a figure, map, notebook, workflow, prototype, resource, or documented attempt.

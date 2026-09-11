@@ -2567,3 +2567,46 @@ Verification
 * Inspected the rendered Home, Day 1, Day 2, and legacy Day 3 pages in a local browser; all rendered images loaded and no browser warnings or errors appeared.
 * Verified Instructions off hides all scaffold admonitions and keeps the report-out control available.
 * Verified Hackathon Report Out shows title, People, and all megaphone sections in source order, with no retired day dividers or unmarked Methods subheadings.
+
+2026-09-11
+
+Prompt
+
+User asked to integrate the OLC Climate Resiliency and Digital Sovereignty Hackathon into the advanced OASIS template for September 15–16, 2026; preserve the three-view architecture and reusable systems; use real prepared public data; add pathways, stewardship prompts, facilitator guidance, optional CubeDynamics guidance, a completion coach, and thorough QA; and avoid merging.
+
+Files and sources inspected
+
+* Entire OASIS repository, Git status/history, active navigation, hooks, scripts, assets, and rendered site
+* OLC source curriculum cloned at commit `a1d5b5b02c4ee23e61213069629087f00794f27f`
+* OLC 2026 Buildathon schedule, instructor guide, pathway notebooks, data-governance and sovereignty guides, final-presentation guide, source manifest, preparation script, and NOAA/USGS prepared datasets
+* Official CubeDynamics repository, documentation, installation status, and real-data quick example
+
+Actions taken
+
+* Reorganized the participant journey around Question → Evidence → Representation → Build → Interpret → Uncertainty → Stewardship → Share while keeping the page Markdown-first.
+* Added the OLC seven-question coverage check and direct, instruction-only GitHub edit controls beside major project-story tasks.
+* Added a real-data OLC example using NOAA/NCEI South Dakota climate-division PDSI and USGS White River streamflow, with a reproducible script, figure, annual CSV, metrics JSON, source commit, hashes, methods, and limitations.
+* Added the actual September 15–16 event rhythm, three parallel pathways, minimum-success definition, public-data boundary, three sovereignty checkpoints, public-sharing guardrails, and short report-out sequence.
+* Added dedicated public-data/stewardship, optional CubeDynamics, and facilitator pages; CubeDynamics remains optional and is described as prerelease without a public package installation.
+* Added a non-blocking Home completion coach with structural checks and explicit non-certification language.
+* Replaced former-repository URLs and the hardcoded team storage destination, updated metadata/branding, and preserved legacy pages and the completed fire example.
+* Removed two tracked generated Python bytecode files and added repository-wide Python cache ignores.
+* Kept report-out mode to exactly six marked story sections and retained instruction hiding, citation rendering, people-profile indexing, and artifact-first editing.
+* Fixed responsive mode controls so they remain available in the content area on narrow screens, kept them above the table of contents on desktop, and contained wide tables and inline code on mobile.
+* Preserved concurrent user customizations to the Home title and visible navigation.
+
+Verification
+
+* Reproduced the OLC annual CSV and metrics JSON byte-for-byte from the pinned prepared data; 35 years were compared, with Spearman rho `0.564465` and Pearson r `0.467751`.
+* Confirmed all OLC example images decode and the preserved fire example images load; browser console showed no warnings or errors on the fire example.
+* Confirmed Instructions off hides all 21 guidance callouts on Home.
+* Confirmed desktop and mobile Hackathon Report Out show exactly: Our Question, Why This Matters, What We Tried to Build, What We Learned, What Remains Uncertain, and What’s Next.
+* Confirmed mobile controls are reachable, mobile pages have no horizontal document overflow, and the OLC example renders in light and dark themes.
+* Ran `scripts/site_health.py`; zero structural warnings and ten expected incomplete-team-content reminders after the user customized the title.
+* Ran the template regression check and JavaScript syntax checks; passed.
+* Ran a strict clean MkDocs build; passed.
+
+Human review needed
+
+* At the pinned OLC source commit, original NOAA/USGS snapshot hashes verify and the preparation script reproduces the files used here, but the source curriculum’s committed `teaching_checksums.json` lists different prepared-output hashes. Facilitators should reconcile or regenerate that checksum file before presenting it as a participant verification target.
+* The completion coach is an editing aid only; it does not establish scientific validity, sovereignty compliance, community fit, ethics, consultation, permission, approval, or authority.

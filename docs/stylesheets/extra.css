@@ -885,6 +885,35 @@ body:has(.oasis-day-marker) .md-sidebar--secondary .md-nav__link--active {
   background: rgba(66, 188, 220, 0.12);
 }
 
+@media screen and (max-width: 59.99em) {
+  .md-typeset :not(pre) > code {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+  }
+
+  .md-typeset a > code {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+
+  .md-typeset__scrollwrap {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    overflow-x: auto;
+  }
+
+  .md-typeset__table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: auto;
+  }
+}
+
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:hover td {
   background: rgba(66, 188, 220, 0.14);
 }
@@ -998,6 +1027,35 @@ body:has(.oasis-day-marker) .md-sidebar--secondary .md-nav__link--active {
   flex-direction: column;
   gap: 0.55rem;
   text-align: center;
+}
+
+.md-content__inner > .oasis-sidebar-utilities--content {
+  align-items: stretch;
+  margin: 0 0 var(--oasis-space-4);
+  padding-top: var(--oasis-space-2);
+}
+
+.oasis-sidebar-utilities--content .template-guidance-toggle,
+.oasis-sidebar-utilities--content .oasis-presentation-toolbar {
+  width: 100%;
+  max-width: 24rem;
+  margin: 0;
+}
+
+.oasis-sidebar-utilities--content .oasis-presentation-toolbar {
+  align-items: stretch;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.oasis-sidebar-utilities--content .oasis-present-hint {
+  color: var(--oasis-color-text);
+  text-align: center;
+}
+
+.oasis-sidebar-utilities--content .oasis-present-button {
+  justify-content: center;
+  width: 100%;
 }
 
 .oasis-sidebar-utilities ul {

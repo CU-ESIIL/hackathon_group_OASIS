@@ -39,11 +39,31 @@ Every team leaves with one focused question, one visible artifact or documented 
 
 Pathways are not ranked. Teams may combine or switch them.
 
+## Questions to use while circulating
+
+- **Question:** Can your data actually help answer that?
+- **Data:** What does one value, row, pixel, or observation physically represent?
+- **Build:** What is the smallest useful thing you could finish today?
+- **Interpretation:** Show me the evidence for that sentence.
+- **Representation:** Who or what is not represented by this dataset?
+- **Uncertainty:** What could you not conclude?
+- **Stewardship:** Who should be involved before this interpretation travels farther?
+- **Synthesis:** If the code never works, what did you learn that another team could reuse?
+
 ## Public-data and sovereignty guardrails
 
 Repeat: **Accessible ≠ interpretable ≠ actionable.** Public availability does not make evidence locally sufficient or authorize use. Keep culturally sensitive knowledge, protected locations, restricted data, personal information, and unapproved claims off public GitHub.
 
 The three sovereignty checkpoints are reflection prompts, not certification. Do not describe a person, Tribe, community, office, OLC, or another organization as a reviewer, collaborator, authority, or endorser unless that relationship has actually occurred and can be stated publicly.
+
+## Pre-event data provenance check
+
+The OASIS example pins the source curriculum at commit `a1d5b5b`. At that commit, the manifest hashes for the original NOAA and USGS snapshots verify, and rerunning `prepare_teaching_data.py` produces these prepared-file hashes:
+
+- `drought_monthly.csv`: `c2b400a135daa36631bf35ae0dd0f422b72d8a71d11a023312aff9cbc92dbd00`
+- `streamflow_daily.csv`: `73a24f5dc5d74173fc4857d42aa68b541e2d7694be9d5a51b50c842af2ffab4c`
+
+The committed `teaching_checksums.json` in that source revision lists different prepared-file hashes. Treat this as an upstream provenance inconsistency for human review: reconcile or regenerate that checksum file before asking participants to use it as a verification target. The OASIS example script verifies the reproduced hashes above and records them in its output metadata.
 
 ## Fast novice check
 

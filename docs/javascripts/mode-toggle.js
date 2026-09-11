@@ -7,17 +7,33 @@
   }
 
   function getRightSidebarUtilities() {
+    const sidebarShell = document.querySelector(".md-sidebar--secondary");
     const sidebar = document.querySelector(".md-sidebar--secondary .md-sidebar__inner");
-    if (!sidebar) {
-      return null;
+    const sidebarIsVisible = sidebarShell
+      && window.matchMedia("(min-width: 60em)").matches
+      && window.getComputedStyle(sidebarShell).display !== "none";
+    if (sidebar && sidebarIsVisible) {
+      let utilities = sidebar.querySelector(".oasis-sidebar-utilities");
+      if (!utilities) {
+        utilities = document.createElement("div");
+        utilities.className = "oasis-sidebar-utilities";
+        sidebar.append(utilities);
+      }
+      utilities.classList.remove("oasis-sidebar-utilities--content");
+      return utilities;
     }
 
-    let utilities = sidebar.querySelector(".oasis-sidebar-utilities");
+    const content = document.querySelector(".md-content__inner");
+    if (!content) {
+      return null;
+    }
+    let utilities = content.querySelector(":scope > .oasis-sidebar-utilities");
     if (!utilities) {
       utilities = document.createElement("div");
       utilities.className = "oasis-sidebar-utilities";
-      sidebar.append(utilities);
+      content.prepend(utilities);
     }
+    utilities.classList.add("oasis-sidebar-utilities--content");
     return utilities;
   }
 
@@ -142,11 +158,21 @@
     document.body.classList.toggle("has-template-instructions", pageHasTemplateInstructions());
   }
 
+  function bindResponsivePlacement() {
+    if (document.documentElement.dataset.oasisModeResizeBound === "true") {
+      return;
+    }
+    document.documentElement.dataset.oasisModeResizeBound = "true";
+    window.addEventListener("resize", init);
+  }
+
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {
     init();
   }
+
+  bindResponsivePlacement();
 
   if (typeof document$ !== "undefined") {
     document$.subscribe(init);

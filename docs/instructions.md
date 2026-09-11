@@ -50,6 +50,20 @@ By noon on September 16, every team should have:
 - One responsible next step
 - A page containing only material appropriate for public sharing
 
+## Seven-question coverage check
+
+The full project page should let a new reader answer all seven questions, even though they do not need seven separate sections:
+
+1. What question did you explore, and why?
+2. What did you learn?
+3. What did you create or try to create?
+4. What remains uncertain?
+5. What would you investigate next?
+6. Who might benefit if this work eventually succeeds?
+7. Who should review or help interpret a continuation?
+
+The short report-out compresses these answers into the six megaphone sections.
+
 ## One page, three views
 
 The Home page serves three purposes without asking participants to maintain slides separately:

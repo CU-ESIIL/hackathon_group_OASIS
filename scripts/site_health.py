@@ -28,7 +28,7 @@ ASSET_DIRS = ["docs/assets/hero", "docs/assets/whiteboards", "docs/assets/explor
               "docs/assets/stickers", "docs/assets/people"]
 PLACEHOLDERS = ["[link]", "TODO", "TBD", "CHANGE_ME", "REPLACE_ME"]
 NAV_ITEMS = ["Home", "OLC Example", "Fire Example", "Directions", "Facilitator Guide",
-             "Specialty Tracks", "Cloud Triangle", "Links"]
+             "Cloud Triangle", "Links"]
 LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 ACTIVE_SCHEDULE_FILES = [
     "docs/index.md",
