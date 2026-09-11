@@ -112,7 +112,7 @@ This is normal. It tells Git who should be credited for changes made from this J
 
 ## Step 6 — Clone your repository using HTTPS
 
-Before cloning, make sure the file browser is at the top folder level. You should see folders such as `data`, `home`, `Project_group_OASIS`, or `startup`.
+Before cloning, make sure the file browser is at the top folder level. You should see folders such as `data`, `home`, `hackathon_group_OASIS`, or `startup`.
 
 Do not clone from inside `data` or `home`; the Git sidebar works best when you start from the top level.
 
@@ -135,7 +135,7 @@ Use the HTTPS clone link for this workflow. This is different from the SSH clone
 4. Copy the URL. It should look like:
 
 ```text
-https://github.com/CU-ESIIL/Project_group_OASIS.git
+https://github.com/CU-ESIIL/hackathon_group_OASIS.git
 ```
 
 Use your group’s repository URL, not necessarily the example above.

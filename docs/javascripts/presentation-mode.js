@@ -37,12 +37,10 @@
         "oasis-report-out-visible",
         "oasis-report-out-title-visible",
         "oasis-report-out-context-visible",
-        "oasis-report-out-day2-visible",
-        "oasis-report-out-day3-visible",
+        "oasis-report-out-section-visible",
         "oasis-report-out-hidden"
       );
     });
-    document.querySelectorAll(".oasis-report-out-divider").forEach((element) => element.remove());
   }
 
   function markReportOutBlocks() {
@@ -71,34 +69,8 @@
       }
     }
 
-    const peopleHeading = document.querySelector(".md-typeset h2#people");
-    if (peopleHeading) {
-      markSection(peopleHeading, "oasis-report-out-context-visible");
-    }
-
-    const typeset = document.querySelector(".md-typeset");
-    const firstDay2 = document.querySelector(".md-typeset h2.oasis-report-out-section.oasis-report-out-day2");
-    if (typeset && firstDay2) {
-      const divider = document.createElement("h2");
-      divider.className = "oasis-report-out-divider oasis-report-out-day2-divider oasis-report-out-visible";
-      divider.textContent = "Day 2 Report Out (2 minutes)";
-      typeset.insertBefore(divider, firstDay2);
-    }
-
-    const firstDay3 = document.querySelector(".md-typeset h2.oasis-report-out-section.oasis-report-out-day3");
-    if (typeset && firstDay3) {
-      const divider = document.createElement("h2");
-      divider.className = "oasis-report-out-divider oasis-report-out-day3-divider oasis-report-out-visible";
-      divider.textContent = "Day 3 Report Out (6 minutes)";
-      typeset.insertBefore(divider, firstDay3);
-    }
-
-    document.querySelectorAll(".md-typeset h2.oasis-report-out-section.oasis-report-out-day2").forEach((heading) => {
-      markSection(heading, "oasis-report-out-day2-visible");
-    });
-
-    document.querySelectorAll(".md-typeset h2.oasis-report-out-section.oasis-report-out-day3").forEach((heading) => {
-      markSection(heading, "oasis-report-out-day3-visible");
+    document.querySelectorAll(".md-typeset h2.oasis-report-out-section").forEach((heading) => {
+      markSection(heading, "oasis-report-out-section-visible");
     });
   }
 
@@ -165,16 +137,16 @@
     presentButton.type = "button";
     presentButton.className = "oasis-present-button";
     presentButton.setAttribute("data-oasis-present-toggle", "");
-    presentButton.setAttribute("aria-label", "Open Summit Report Out layout");
+    presentButton.setAttribute("aria-label", "Open Hackathon Report Out layout");
     presentButton.setAttribute("aria-pressed", "false");
-    presentButton.innerHTML = '<span aria-hidden="true">▶</span><span>Summit Report Out</span>';
+    presentButton.innerHTML = '<span aria-hidden="true">▶</span><span>Hackathon Report Out</span>';
     presentButton.addEventListener("click", () => {
       setPresentationMode(!document.body.classList.contains("presentation-mode"));
     });
 
     const hint = document.createElement("span");
     hint.className = "oasis-present-hint";
-    hint.textContent = "Press P for Summit Report Out";
+    hint.textContent = "Press P for Hackathon Report Out";
 
     toolbar.append(presentButton, hint);
     target.element.append(toolbar);
@@ -195,7 +167,7 @@
     exitButton.type = "button";
     exitButton.className = "oasis-present-exit";
     exitButton.textContent = "Exit";
-    exitButton.setAttribute("aria-label", "Exit Summit Report Out layout. Press Escape to exit.");
+    exitButton.setAttribute("aria-label", "Exit Hackathon Report Out layout. Press Escape to exit.");
     exitButton.addEventListener("click", () => setPresentationMode(false));
     document.body.append(exitButton);
 

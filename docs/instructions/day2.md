@@ -1,147 +1,86 @@
 ---
-title: Day 2 — Build and Report Back
+title: Day 2 — Interpret, Steward, and Share
 oasis_day: 2
 extra:
   body_class: day-2
 ---
 
-# Day 2 — Build and Report Back
+# Day 2 — Interpret, Steward, and Share
 
-Day 2 is the main work day. Your team has about **3.5 to 4 hours of total team work time** across the day.
+**Wednesday, September 16, 2026 · half day**
 
-This is where most of the project happens. The goal is not to do everything. The goal is to build **one useful thing** and document it clearly enough that other people can understand what you tried.
+Day 2 protects a short finish window, then turns the build into an honest and reusable story. Do not begin a new direction unless the Day 1 approach cannot answer the scoped question.
 
-By the end of Day 2, your Summit team should have:
-
-- Questions, hypotheses, and context from the morning
-- At least one visual, such as a photo of a whiteboard or notes
-- A clear product direction or analysis direction
-- Evidence of work, such as data, methods, design, code, a concept, or a prototype
-- One early result or obstacle
-- A 2-minute report ready
-
-[📣 Edit the Day 2 sections](https://github.com/CU-ESIIL/Project_group_OASIS/edit/main/docs/index.md){ .md-button .md-button--primary }
+[Edit your team page](https://github.com/CU-ESIIL/hackathon_group_OASIS/edit/main/docs/index.md){ .md-button .md-button--primary target="_blank" rel="noopener" }
 [Open Home](../index.md){ .md-button }
-[See the Example](../example.md){ .md-button }
+[See the OLC example](../olc-example.md){ .md-button }
 
-## D2-A — Morning focus: questions, hypotheses, context
+## Event rhythm
 
-**Main pages:** Define, Explore, Data, and Methods; Project Question
+| Time | Event and team focus |
+|---|---|
+| 8:30 a.m. | Check-in |
+| 9:00–10:00 a.m. | Finish and proportionally validate the most useful artifact |
+| 10:00 a.m. | Break |
+| 10:15–10:45 a.m. | Prepare the public page, evidence boundary, stewardship handoff, and report-out |
+| 10:45–11:45 a.m. | Team sharing |
+| 11:45 a.m.–noon | Reflection |
+| Noon | Adjourn |
 
-Use the morning to draft questions, hypotheses, and context. Add at least one visual, such as a photo of your whiteboard, sticky notes, sketch, or shared notes.
+Times follow the source OLC event schedule; facilitators may announce local adjustments.
 
-Ask:
+## 9:00–10:00 — Finish and validate
 
-- What are we trying to understand or enable?
-- Who would use the answer?
-- What would count as progress today?
-- What is realistic today?
-- What is too big?
-- Does this still match our product?
+Reconfirm the smallest useful finish. Validation should match the artifact and available time. It might mean:
 
-Write one working question, a few hypotheses or hunches, and the context someone needs to understand the work.
+- Checking a sample of records or outputs
+- Comparing against a known example or baseline
+- Reproducing the workflow from a clean start
+- Running one sensitivity check
+- Asking a teammate to challenge the interpretation
+- Recording why a stronger check was not possible
 
-## D2-B — Use AI breakout intentionally
+Keep a partial artifact when it is informative. State what works, what does not, and what another person would need to continue.
 
-**Main pages:** Define, Explore, Data, and Methods; Method and Code
+## 10:15–10:45 — Interpret, steward, and prepare
 
-Decide quickly who goes where during the AI breakout rotation.
+Complete the Home story in this order:
 
-Each person should go in with one question and bring back one useful idea, method, example, or warning.
+1. **Observation:** What happened?
+2. **Evidence:** What artifact or analysis supports it?
+3. **Interpretation:** What do you think it means?
+4. **Uncertainty:** What do you not know or should not claim?
+5. **Stewardship:** Who should help frame, interpret, or review a continuation?
+6. **Next step:** What is the smallest responsible continuation?
 
-The four focus areas are:
+Use sovereignty checkpoint 3 before public sharing. Naming a person, office, Tribe, community, or organization as a possible future reviewer does not mean review, permission, approval, authority, partnership, or endorsement has occurred.
 
-- Building Earth embeddings
-- Co-producing digital twins for environmental futures
-- Advancing best practices for using large language models in environmental data science
-- AI and causal inference for ecological mechanisms and decision-making
+Turn **Instructions off** and check that only public-safe content remains. Review the non-blocking [site completion coach](../_site_health.md); it finds common omissions but cannot judge the science or social context.
 
-Document only the ideas, methods, examples, or warnings that change what your team will build or test.
+## 10:45–11:45 — Share from OASIS
 
-## D2-C — Afternoon focus: try datasets and analyses
+Select **Hackathon Report Out** on Home. Do not create a separate slide deck unless facilitators request one. Aim for **5–6 minutes** unless the facilitator assigns a different team allotment.
 
-**Main page:** Define, Explore, Data, and Methods
+Walk through:
 
-Try a few datasets and analyses. Keep it visual, keep it simple. Update the site to reflect what you test.
+- Our Question
+- Why This Matters
+- What We Tried to Build
+- What We Learned
+- What Remains Uncertain
+- What’s Next
 
-Choose **one primary output type** for the rest of Day 2.
-
-Pick one:
-
-- A figure or map
-- A prototype or workflow
-- A concept brief
-- A decision framework
-- A notebook or code example
-- A research question and next-step plan
-
-Do not try to make all of these. Pick the one that best matches your team, your time, and your question.
-
-## D2-D — Update data and methods as you test
-
-**Main pages:** Data Exploration, Method and Code
-
-You have roughly **3 hours total** to build something.
-
-Focus on making one useful thing. Update the page as you go. This page is your shared record.
-
-Use these sections to capture:
-
-- Snapshot showing initial data patterns
-- 2-4 promising data sources, with links and 1-line notes
-- 2-4 methods or technologies you are testing, such as stats, models, or visualization
-- Challenges identified
-- Visuals
-- Short-term and long-term next steps
-
-Keep it visual, keep it simple, and update the site to reflect what you test.
-
-## D2-E — Synthesize findings and visuals
-
-**Main page:** Results
-
-Focus on synthesis. Highlight **2-3 visuals** that tell the story and keep text crisp.
-
-Use the Results section to prepare a 6-minute walkthrough of the homepage:
-
-- Why
-- Questions
-- Data/Methods
-- Findings
-- Next
-
-Add:
-
-- Team photo
-- Findings at a glance
-- Visuals that tell the story
-- What is next
-
-## D2-F — Prepare the 2-minute report
-
-**Main page:** Report Out (Day 2, 2 minutes)
-
-Spend **15–20 minutes max** preparing this.
-
-Keep it simple:
-
-- What you are making
-- What question you asked
-- Why it matters
-- What you tried
-- What you found or learned
-- What you will do tomorrow
-
-This is a checkpoint, not a final result.
+Point to the artifact rather than reading every sentence. A useful report-out can center a null result, failed approach, evidence mismatch, or well-defined limitation.
 
 ## Day 2 finish line
 
-You are done when you have something real, even if it is incomplete.
+Someone outside the team should be able to understand:
 
-Before leaving, your page should have:
+- The question and public-data boundary
+- What the artifact does and how it was checked
+- What the evidence supports
+- What remains uncertain or did not work
+- Which roles or relationships a continuation needs
+- What can be reused and what should happen next
 
-- A drafted and focused question
-- One chosen output type
-- Evidence of work
-- One early result or obstacle
-- A short, clear 2-minute report
+Only public-safe material belongs on the published page. Keep sensitive, private, restricted, or community-controlled information in an approved location.

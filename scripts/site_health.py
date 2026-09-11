@@ -16,18 +16,32 @@ DOCS = ROOT / "docs"
 REPORT = DOCS / "_site_health.md"
 MKDOCS = ROOT / "mkdocs.yml"
 PEOPLE_DATA = DOCS / "_data" / "people.yml"
-REQUIRED = ["docs/index.md", "docs/example.md", "mkdocs.yml", "README.md", "AGENTS.md", "PROMPT_ACTION_LOG.md",
+REQUIRED = ["docs/index.md", "docs/olc-example.md", "docs/example.md", "mkdocs.yml", "README.md", "AGENTS.md", "PROMPT_ACTION_LOG.md",
             "docs/stylesheets/tokens.css", "docs/stylesheets/extra.css",
             "docs/javascripts/presentation-mode.js", "docs/instructions/day1.md",
-            "docs/instructions/day2.md", "docs/instructions/day3.md",
+            "docs/instructions/day2.md", "docs/instructions/stewardship.md",
+            "docs/instructions/cubedynamics.md", "docs/facilitator-guide.md",
             "docs/people/template.md", "docs/storage/add-your-profile.md",
             "docs/references.bib", "docs/_data/people.yml"]
 ASSET_DIRS = ["docs/assets/hero", "docs/assets/whiteboards", "docs/assets/explorations",
               "docs/assets/figures", "docs/assets/team", "docs/assets/files",
               "docs/assets/stickers", "docs/assets/people"]
 PLACEHOLDERS = ["[link]", "TODO", "TBD", "CHANGE_ME", "REPLACE_ME"]
-NAV_ITEMS = ["Home", "Example", "Instructions", "AI for Sustainability", "Specialty Tracks", "Cloud Triangle", "Links", "Orientation"]
+NAV_ITEMS = ["Home", "OLC Example", "Fire Example", "Directions", "Facilitator Guide",
+             "Specialty Tracks", "Cloud Triangle", "Links"]
 LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
+ACTIVE_SCHEDULE_FILES = [
+    "docs/index.md",
+    "docs/instructions.md",
+    "docs/instructions/day1.md",
+    "docs/instructions/day2.md",
+    "docs/project_template.md",
+]
+STALE_SCHEDULE_PATTERNS = [
+    (re.compile(r"\b3[- ]Day\b", re.I), "three-day event language"),
+    (re.compile(r"\bDay 3\b", re.I), "active Day 3 language"),
+    (re.compile(r"\b(?:2|6)[- ]minute (?:report|walkthrough)", re.I), "retired fixed report timing"),
+]
 
 
 def nav_labels(text: str) -> list[str]:
@@ -46,7 +60,7 @@ def nav_labels(text: str) -> list[str]:
 
 def text_files() -> list[Path]:
     docs_files = [path for path in sorted(DOCS.rglob("*.md")) if path.name != "_site_health.md"]
-    return [ROOT / "README.md", ROOT / "AGENTS.md", ROOT / "PROMPT_ACTION_LOG.md", MKDOCS] + docs_files
+    return [ROOT / "README.md", MKDOCS] + docs_files
 
 
 def missing_file_issues() -> list[str]:
@@ -72,6 +86,19 @@ def placeholder_issues() -> list[str]:
 def navigation_issues() -> list[str]:
     labels = nav_labels(MKDOCS.read_text(encoding="utf-8")) if MKDOCS.exists() else []
     return [f"⚠ Navigation issue: missing nav item '{item}' in mkdocs.yml" for item in NAV_ITEMS if item not in labels]
+
+
+def schedule_issues() -> list[str]:
+    issues: list[str] = []
+    for relative_path in ACTIVE_SCHEDULE_FILES:
+        path = ROOT / relative_path
+        if not path.exists():
+            continue
+        text = path.read_text(encoding="utf-8")
+        for pattern, label in STALE_SCHEDULE_PATTERNS:
+            if pattern.search(text):
+                issues.append(f"⚠ Schedule issue: {label} in {relative_path}")
+    return issues
 
 
 def sticker_validation_issues() -> list[str]:
@@ -201,14 +228,95 @@ def internal_link_issues() -> list[str]:
     return issues
 
 
-def write_report(issues: list[str]) -> None:
-    lines = ["Site Health", ""]
+def completion_checks() -> list[tuple[bool, str, str]]:
+    """Return non-blocking Home-page editing checks with plain-language guidance."""
+    if not (DOCS / "index.md").exists():
+        return [(False, "Home page exists", "Restore `docs/index.md` before editing the project story.")]
+
+    text = (DOCS / "index.md").read_text(encoding="utf-8")
+    return [
+        (
+            "# Team Project: Make This Your Own" not in text,
+            "Project title is customized",
+            "Replace the default H1 and front-matter title with the team’s project name.",
+        ),
+        (
+            "Our working question:\n\n..." not in text,
+            "Working question is written",
+            "State one question narrow enough to investigate during the event.",
+        ),
+        (
+            "| ... | ... | ... | ... | ... |" not in text,
+            "Main evidence is documented",
+            "Complete the Data and Evidence row: dataset, source, place, period, and meaning.",
+        ),
+        (
+            "- **Main artifact:** ..." not in text,
+            "Main artifact is linked",
+            "Link a figure, map, notebook, workflow, prototype, resource, or documented attempt.",
+        ),
+        (
+            "**Observation — what happened:** ..." not in text
+            and "**Evidence — what supports it:** ..." not in text
+            and "**Interpretation — what we think it means:** ..." not in text,
+            "Learning separates observation, evidence, and interpretation",
+            "Replace all three prompts and point the claim to a visible artifact.",
+        ),
+        (
+            "What these data or artifacts cannot tell us:\n\n..." not in text,
+            "Evidence boundary is stated",
+            "Name the most important uncertainty or claim the evidence cannot support.",
+        ),
+        (
+            "Next technical step:\n\n..." not in text
+            and "Next stewardship or collaboration step:\n\n..." not in text,
+            "Technical and stewardship next steps are written",
+            "Name one specific step in each category.",
+        ),
+        (
+            "Potential roles or perspectives—not claims of consultation or approval:\n\n- ..." not in text,
+            "Future review roles are identified",
+            "Name relevant roles or perspectives without implying review, permission, or approval.",
+        ),
+        (
+            "assets/hero/hero.png" not in text,
+            "Default hero image is replaced",
+            "Replace the template hero with a public-safe, project-relevant image.",
+        ),
+        (
+            "|  |  |  |  |" not in text,
+            "People table has at least one entry",
+            "Add one short row per teammate; do not publish private contact details.",
+        ),
+        (
+            "- **Code/notebooks:** ..." not in text
+            and "- **Data and terms:** ..." not in text
+            and "- **Reuse notes:** ..." not in text,
+            "Reuse and provenance notes are complete",
+            "Add stable links, source terms, citations, and concise reproduction notes.",
+        ),
+    ]
+
+
+def write_report(issues: list[str], checks: list[tuple[bool, str, str]]) -> None:
+    lines = ["# Site Health", ""]
     if not issues:
-        lines.append("✓ No issues detected.")
+        lines.append("✓ No structural, navigation, or link issues detected.")
     else:
-        lines.extend(["⚠ Attention needed", ""])
+        lines.extend(["## Structural checks", ""])
         lines.extend(issues)
-    lines.extend(["", "This report is generated automatically during the site build. Fix these items in the repository to improve the site."])
+    lines.extend(["", "## Completion coach", ""])
+    for complete, label, guidance in checks:
+        if complete:
+            lines.append(f"- ✓ **{label}**")
+        else:
+            lines.append(f"- ⚠ **{label}:** {guidance}")
+    lines.extend([
+        "",
+        "This report is generated automatically during the site build. Warnings do not block publishing.",
+        "",
+        "The completion coach is an editing aid. It does not validate scientific claims, ethics, sovereignty, community fit, consultation, permission, approval, or authority.",
+    ])
     REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
@@ -218,12 +326,18 @@ def main() -> int:
         + missing_asset_dir_issues()
         + placeholder_issues()
         + navigation_issues()
+        + schedule_issues()
         + internal_link_issues()
         + sticker_validation_issues()
         + people_gallery_issues()
     )
-    write_report(issues)
-    print(f"Generated {REPORT.relative_to(ROOT)} with {len(issues)} warning(s).")
+    checks = completion_checks()
+    incomplete = sum(not complete for complete, _, _ in checks)
+    write_report(issues, checks)
+    print(
+        f"Generated {REPORT.relative_to(ROOT)} with {len(issues)} structural warning(s) "
+        f"and {incomplete} incomplete Home item(s)."
+    )
     return 0
 
 

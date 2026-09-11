@@ -359,7 +359,13 @@ body:has(.oasis-day-marker) .md-sidebar--secondary .md-nav__link--active {
   }
 
   .md-sidebar--secondary .oasis-sidebar-utilities {
-    margin: auto var(--oasis-space-3) var(--oasis-space-6);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    order: -1;
+    margin: 0 var(--oasis-space-3) var(--oasis-space-3);
+    padding: var(--oasis-space-2) 0;
+    background: var(--oasis-color-surface);
   }
 
   .md-sidebar--secondary .md-nav__title {
@@ -433,7 +439,7 @@ body:has(.oasis-day-marker) .md-sidebar--secondary .md-nav__link--active {
   height: 8.8rem;
   margin: -1.15rem 0.5rem 0 0;
   padding: 0;
-  background: url("../assets/esiil_content/event_group_logo.png") center / contain no-repeat;
+  background: url("../assets/esiil_content/group_logo.svg") center / contain no-repeat;
 }
 
 .md-sidebar--primary .md-nav__title .md-logo img,
@@ -762,7 +768,7 @@ body:has(.oasis-day-marker) .md-sidebar--secondary .md-nav__link--active {
 }
 
 .md-typeset a[href$=".pdf"],
-.md-typeset a[href*="github.com/CU-ESIIL/Project_group_OASIS/tree/main"] {
+.md-typeset a[href*="github.com/CU-ESIIL/hackathon_group_OASIS/tree/main"] {
   border-bottom: 1px solid rgba(66, 188, 220, 0.42);
 }
 
@@ -968,7 +974,7 @@ body:has(.oasis-day-marker) .md-sidebar--secondary .md-nav__link--active {
   background: var(--oasis-color-surface-muted);
 }
 
-/* Summit Report Out mode */
+/* Hackathon Report Out mode */
 .oasis-presentation-toolbar {
   display: flex;
   align-items: center;
@@ -978,8 +984,7 @@ body:has(.oasis-day-marker) .md-sidebar--secondary .md-nav__link--active {
 }
 
 .oasis-presentation-toolbar--sidebar {
-  position: sticky;
-  bottom: var(--oasis-space-3);
+  position: static;
   align-items: stretch;
   flex-direction: column;
   justify-content: flex-start;
@@ -1085,6 +1090,7 @@ body.presentation-mode .md-tabs,
 body.presentation-mode .md-sidebar,
 body.presentation-mode .md-footer,
 body.presentation-mode .site-footer,
+body.presentation-mode .md-top,
 body.presentation-mode .md-content__button,
 body.presentation-mode .oasis-presentation-toolbar {
   display: none !important;
@@ -1150,20 +1156,8 @@ body.presentation-mode .md-typeset > .oasis-report-out-context-visible {
   order: 20;
 }
 
-body.presentation-mode .md-typeset > .oasis-report-out-day2-divider {
+body.presentation-mode .md-typeset > .oasis-report-out-section-visible {
   order: 30;
-}
-
-body.presentation-mode .md-typeset > .oasis-report-out-day2-visible {
-  order: 40;
-}
-
-body.presentation-mode .md-typeset > .oasis-report-out-day3-divider {
-  order: 50;
-}
-
-body.presentation-mode .md-typeset > .oasis-report-out-day3-visible {
-  order: 60;
 }
 
 body.presentation-mode .md-typeset h1 {
@@ -1173,19 +1167,6 @@ body.presentation-mode .md-typeset h1 {
 
 body.presentation-mode .md-typeset h2 {
   margin-top: calc(var(--oasis-space-8) + var(--oasis-space-4));
-}
-
-body.presentation-mode .md-typeset .oasis-report-out-divider {
-  padding: var(--oasis-space-3) var(--oasis-space-4);
-  border-left: 0.45rem solid var(--oasis-color-accent-green);
-  border-radius: var(--oasis-radius-sm);
-  background: rgba(0, 113, 53, 0.08);
-  color: var(--oasis-color-primary-blue);
-}
-
-body.presentation-mode .md-typeset .oasis-report-out-day3-divider {
-  border-left-color: var(--oasis-color-accent-blue);
-  background: rgba(66, 188, 220, 0.12);
 }
 
 body.presentation-mode .md-typeset > p > img,

@@ -22,7 +22,7 @@ Ask Codex to open `mkdocs.yml` and update the following keys so the published si
 - `repo_name`: short display label such as `"ORG/Project"`.
 - `repo_url`: the full GitHub URL to the repository.
 - Confirm the `theme`, `nav`, and plugins look right for your project. Update any navigation labels that still reference “Project Group OASIS.”
-- Update the `nav` item labeled **Your persistent storage** so it links to your team’s CyVerse folder. Replace `Group_1` in the URL with the number that matches your repository name (for example, a repo ending in `_5` should use `Group_5`). If the shared link needs a unique `resourceId`, grab the correct link directly from the Data Store interface while viewing your group’s folder.
+- If facilitators provide team-specific persistent storage, add its approved link to the navigation or directions. Do not ship a template with another team’s folder or resource identifier.
 
 ### Top-level files
 
@@ -32,7 +32,7 @@ Ask Codex to open `mkdocs.yml` and update the following keys so the published si
 
 ### Search-and-replace the old name
 
-Run a repository-wide search for `Project_group_OASIS` and replace it with your new repo name. Pay attention to:
+Run a repository-wide search for `hackathon_group_OASIS` and replace it with your new repo name. Pay attention to:
 
 - Front-matter in the Markdown files inside `docs/` (for example, hero images or repo links).
 - Any sample links in documentation under `docs/orientation/`.
@@ -76,7 +76,7 @@ If you are using any of the orientation materials, skim the files in `docs/orien
 
 Update `docs/instructions/save-to-persistent-storage.md` so it points to your team’s storage location. Edit the `GROUP_NAME`, base path, and any screenshots that mention the original template.
 
-> **Reminder:** The template ships with `Group_1` placeholders for the navigation link and shell snippets. Swap these for your group’s identifier (matching the number in your repo name). If your team has a custom share link from the Data Store, copy it from the CyVerse web UI to keep the `resourceId` accurate.
+> **Reminder:** The template intentionally ships without a team storage location. Add only the facilitator-approved root and team folder. If your team has a custom share link from the Data Store, copy it from the Data Store interface and confirm its access boundary before publishing it.
 
 ---
 

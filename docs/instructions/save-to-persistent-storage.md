@@ -59,20 +59,21 @@ The `i:` prefix means an iRODS remote path. Local paths, such as `outputs/run-YY
 
 ## 1) Set your group paths
 
-The shared community folder root is:
+This template does not assume that your team has a particular shared folder. Ask a facilitator for the approved iRODS root before transferring data.
 
 ```text
-i:/iplant/home/shared/esiil/Innovation_summit/<GROUP_NAME>
+<FACILITATOR_PROVIDED_IRODS_ROOT>/<TEAM_FOLDER>
 ```
 
-Set these environment variables in your terminal. Change the group name and username first.
+Set these environment variables in your terminal. Replace all three bracketed values first.
 
 ```bash
-# Edit these two lines
-GROUP_NAME="Group_1"
+# Edit these three lines
+COMMUNITY_ROOT="<facilitator-provided-irods-root>"
+GROUP_NAME="<team-folder>"
 USERNAME="<your_cyverse_username>"
 
-COMMUNITY="i:/iplant/home/shared/esiil/Innovation_summit/${GROUP_NAME}"
+COMMUNITY="${COMMUNITY_ROOT}/${GROUP_NAME}"
 PERSONAL="i:/iplant/home/${USERNAME}"
 ```
 
@@ -152,8 +153,8 @@ Good places for that note:
 Example note:
 
 ```markdown
-Large model outputs are stored in:
-`i:/iplant/home/shared/esiil/Innovation_summit/Group_1/outputs/fire-spread-run-01/`
+Large model outputs are stored in the facilitator-approved team location:
+`<facilitator-provided-irods-root>/<team-folder>/outputs/<descriptive-run-name>/`
 ```
 
 ## Troubleshooting
@@ -161,14 +162,14 @@ Large model outputs are stored in:
 If a path is not found, list upward and then drill down to confirm exact folder names:
 
 ```bash
-./gocmd ls i:/iplant/home/shared/esiil/Innovation_summit
-./gocmd ls i:/iplant/home/shared/esiil/Innovation_summit/${GROUP_NAME}
+./gocmd ls "${COMMUNITY_ROOT}"
+./gocmd ls "${COMMUNITY}"
 ```
 
 If a collection exists but transfers fail, inspect its type and permissions:
 
 ```bash
-./gocmd stat i:/iplant/home/shared/esiil/Innovation_summit/${GROUP_NAME}/<EXACT_NAME>
+./gocmd stat "${COMMUNITY}/<EXACT_NAME>"
 ```
 
 If a transfer is interrupted, rerun the command with `--diff` so GoCommands can skip files that already transferred.

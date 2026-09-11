@@ -2528,3 +2528,42 @@ Actions taken
 Verification
 
 * Ran `node --check docs/javascripts/presentation-mode.js`; passed.
+
+2026-09-11
+
+Prompt
+
+User asked to preserve the detailed 2.5-day Summit template while adapting its active workflow to a 1.5-day Hackathon, beginning with a repository-wide review and plan.
+
+Files inspected
+
+* Repository-wide file inventory and terminology search
+* `docs/index.md`, `docs/example.md`, and `docs/project_template.md`
+* `docs/instructions.md` and all day guides under `docs/instructions/`
+* `docs/ai-for-sustainability/norms.md` and `docs/stickers.md`
+* `docs/javascripts/`, `docs/stylesheets/`, `docs/overrides/`, and `hooks.py`
+* `mkdocs.yml`, `README.md`, `TEMPLATE_GUIDE.md`, `CITATION.cff`, and `docs/references.bib`
+* `scripts/site_health.py`, `scripts/template_regression_check.py`, and `scripts/check_stickers.py`
+* Administrative, orientation, scientific-code, data, and retired-asset areas to identify content that should remain unchanged
+
+Actions taken
+
+* Reframed the active workflow as Day 1 full-day alignment and building followed by Day 2 half-day finishing, validation, synthesis, reuse, and sharing.
+* Preserved the Home page’s existing artifact, evidence, people, norms, data, methods, findings, citation, and next-step structure.
+* Replaced the broken hero reference and added a schedule-neutral, editable working-notes SVG without deleting the retired Day 2 asset.
+* Collapsed separate Day 2 and Day 3 presentation groups into one cumulative **Hackathon Report Out**, retaining the existing keyboard shortcut, URL mode, and subsection-hiding behavior.
+* Retained `docs/instructions/day3.md` as a short compatibility route for older bookmarks and kept retired sticker assets and registries as labeled history.
+* Removed legacy Summit gallery pages from active navigation while retaining the source pages and event-specific storage/profile links.
+* Aligned the completed example, norms guidance, alternate template, citation metadata, design tokens, and repository description with the Hackathon terminology.
+* Updated site health and regression checks to validate the 1.5-day contract and warn non-blockingly about stale active schedule language.
+
+Verification
+
+* Ran `python3 scripts/template_regression_check.py`; passed.
+* Ran `python3 scripts/check_stickers.py`; passed.
+* Ran `python3 scripts/site_health.py`; generated zero warnings.
+* Ran `node --check` for both JavaScript files; passed.
+* Ran a strict clean MkDocs build in a temporary environment; passed.
+* Inspected the rendered Home, Day 1, Day 2, and legacy Day 3 pages in a local browser; all rendered images loaded and no browser warnings or errors appeared.
+* Verified Instructions off hides all scaffold admonitions and keeps the report-out control available.
+* Verified Hackathon Report Out shows title, People, and all megaphone sections in source order, with no retired day dividers or unmarked Methods subheadings.

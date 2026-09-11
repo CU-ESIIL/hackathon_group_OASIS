@@ -1,13 +1,13 @@
-# Project Group Template
+# OLC Climate Resiliency Hackathon · OASIS Template
 
 
-This repository is a template for ESIIL Project Groups.
+This repository is the OASIS team-workspace template for the OLC Climate Resiliency and Digital Sovereignty Hackathon on September 15–16, 2026. It adapts the [source OLC curriculum](https://github.com/olc-techsupport/Education-Climate-Resiliency-Digital-Sovereignty) while preserving the reusable OASIS instructions, public-page, and report-out views.
 
 The website is built from the docs/ folder using MkDocs.
 
 ## Preview locally
 
-pip install mkdocs-material
+pip install -r requirements.txt
 mkdocs serve
 
 ## Build site
@@ -18,9 +18,9 @@ mkdocs build --strict --clean
 
 The site generates a non-blocking health report during the build.
 
-The report appears at the bottom of the homepage and flags common issues such as missing files, placeholder links, or incomplete template fields.
+The generated `docs/_site_health.md` report flags structural problems and coaches teams through common incomplete fields.
 
-Warnings do not prevent the site from publishing.
+Warnings do not prevent the site from publishing, and the completion coach does not validate scientific claims, ethics, sovereignty, community fit, review, or approval.
 
 ## Editing Pages
 
@@ -34,11 +34,11 @@ Each person has their own Markdown profile file in `docs/people/`. The homepage 
 
 Add BibTeX entries to `docs/references.bib`, then cite them in Markdown with `[@citationKey]`. The site build renders the References section automatically.
 
-## Completing the Results and Polished Outputs
+## Completing the Project Story
 
-Use the homepage **Results** and **Polished Outputs** sections as a synthesis checklist, not an activity log. Add specific insights, link each one to a figure, notebook, PDF, dashboard, data product, or other artifact, and mark confidence as High, Medium, or Low with a short reason.
+Use the Home page as a synthesis checklist, not an activity log: Question → Evidence → Representation → Build → Interpret → Uncertainty → Stewardship → Share. Add specific observations, link them to a figure, notebook, PDF, dashboard, data product, or another artifact, and state the evidence boundary plainly.
 
-Strong entries state what changed, why it matters, what evidence supports it, what remains uncertain, and what another group can reuse. Keep the text short enough to present in a 2-minute walkthrough.
+Strong entries state what happened, why it matters, what evidence supports it, what remains uncertain, who should help with a continuation, and what another group can reuse. Keep the report-out sections short enough for a 5–6 minute walkthrough unless facilitators set another allotment.
 
 ## GitHub Pages
 

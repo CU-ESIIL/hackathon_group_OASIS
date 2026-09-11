@@ -1,9 +1,20 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite it as below."
-title: "Project Group OASIS"
-version: "1.0.0"
-doi: 10.5281/zenodo.11166898
-date-released: 2025-09-10
+title: "OLC Climate Resiliency Hackathon OASIS Template"
+version: "1.1.0"
+date-released: 2026-09-11
+repository-code: "https://github.com/CU-ESIIL/hackathon_group_OASIS"
+url: "https://cu-esiil.github.io/hackathon_group_OASIS/"
+abstract: >-
+  An editable project workspace, public project story, and report-out template
+  adapted for the September 2026 OLC Climate Resiliency and Digital Sovereignty
+  Hackathon.
+keywords:
+  - climate resiliency
+  - digital sovereignty
+  - hackathon
+  - environmental data science
+  - OASIS
 authors:
   - family-names: Tuff
     given-names: Ty

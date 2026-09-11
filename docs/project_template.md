@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "OASIS: 3-Day Team Template"
+title: "OASIS: 1.5-Day Hackathon Template"
 subtitle: "A friction-free guide for collaborative research sprints"
 hero_image: assets/template/hero.svg
 team_logo: assets/template/team-logo.svg
 contact_slack: "#oasis-project-room"
 contact_email: "team@example.org"
 repo_owner: "cu-esiil"
-repo_name: "Project_group_OASIS"
+repo_name: "hackathon_group_OASIS"
 edit_path: "docs/project_template.md"
 ---
 
@@ -32,25 +32,25 @@ Slack: {{ page.contact_slack }} · Email: [{{ page.contact_email }}](mailto:{{ p
 *If this link 404s, set `repo_owner`, `repo_name`, and `edit_path` in the front matter.*
 
 <nav style="position:sticky; top:0; background:#fff; padding:0.5rem; border-bottom:1px solid #ccc;">
-[Day 1](#day1) · [Day 2](#day2) · [Day 3](#day3) · [Resources](#resources)
+[Day 1](#day1) · [Day 2](#day2) · [Resources](#resources)
 </nav>
 
 ## Contents
 - [Day 1](#day1)
 - [Day 2](#day2)
-- [Day 3](#day3)
 - [Resources](#resources)
 - [FAQ](#faq)
 
 <a id="day1"></a>
 <details>
-<summary><strong>Day 1 — Kickoff &amp; Page Setup</strong></summary>
+<summary><strong>Day 1 — Align, Set Up &amp; Build</strong></summary>
 
 ### Objectives
 - Form your team and assign roles
 - Draft a project one-liner to align expectations
 - Swap in your hero and team images
 - Make and push your first commit
+- Choose one primary output and build a useful first version
 
 ### Steps
 1. **Project One-liner** – In one sentence, describe what you will explore.  
@@ -67,8 +67,10 @@ Slack: {{ page.contact_slack }} · Email: [{{ page.contact_email }}](mailto:{{ p
 | Comms | _(your name)_ | Summarizes outcomes, crafts visuals |
 ```
 
-4. **Swap Images** – Follow the Image Replacement Micro-Guide in [Resources](#resources) to update `hero_image` and insert a team photo.
-5. **Commit & Push**  
+4. **Choose one output** – Focus on one figure, map, prototype, workflow, brief, decision framework, notebook, or next-step plan.
+5. **Build and document** – Record data sources, methods, evidence, obstacles, and an early artifact as you work.
+6. **Swap Images** – Follow the Image Replacement Micro-Guide in [Resources](#resources) to update `hero_image` and insert a team photo.
+7. **Commit & Push**
    - *Web editor:* click **✏️ Edit this page**, make changes, write a short commit message, and **Commit changes**.  
    - *Clone route:* `git clone <repo-url>` → edit locally → `git add -A` → `git commit -m "initial setup"` → `git push`.
 
@@ -81,27 +83,30 @@ Project one-liner: _(write it here)_
 - [ ] One-liner added
 - [ ] Team roles filled
 - [ ] Hero & team images swapped
+- [ ] One focused output has a useful first version
+- [ ] Evidence, methods, or a clear obstacle is documented
 - [ ] Commit pushed to main
 
 </details>
 
 <a id="day2"></a>
 <details>
-<summary><strong>Day 2 — Data &amp; Analysis Sandbox</strong></summary>
+<summary><strong>Day 2 — Finish, Validate &amp; Share</strong></summary>
 
 ### Objectives
-- Pick a dataset and document its source
-- Run a tiny analysis using Python or R
-- Save at least one result figure
-- Note what worked or failed
+- Finish and validate the most useful artifact
+- State one or two evidence-backed claims
+- Name confidence, limitations, and next steps
+- Prepare one cumulative Hackathon Report Out
 
 ### Steps
-1. **Explore Libraries** – Start with these resources:
+1. **Reconfirm the finish line** – Decide what must work, what needs checking, and what can be dropped.
+2. **Explore Libraries** – Start with these resources:
    - [Data Library](https://example.com/data-library) – replace with real link.
    - [Analytics Library](https://example.com/analytics-library) – replace with real link.
-2. **Select Data** – Choose one dataset and note its source.
+3. **Select Data** – Choose one dataset and note its source.
    *Example: *NOAA daily precipitation for Boulder County.*
-3. **Set Up Tools** – Optional `gocmd` quickstart for Linux:
+4. **Set Up Tools** – Optional `gocmd` quickstart for Linux:
 
 ```bash
 # Linux quickstart
@@ -114,7 +119,7 @@ curl -L -s https://github.com/cyverse/gocommands/releases/download/${GOCMD_VER}/
 ```
 
    > *(macOS uses a different tarball)*
-4. **Minimal Analysis** – Run one of the snippets:
+5. **Minimal Analysis** – Run one of the snippets:
 
 ```python
 # Python example
@@ -131,61 +136,24 @@ df <- read.csv(url)
 head(df)
 ```
 
-5. **Record Results** – Save a figure into `assets/results/`:
+6. **Record Results** – Save a figure into `assets/results/`:
 
 ```markdown
 <!-- Save figures into assets/results/ and reference below -->
 ![Result Figure](assets/results/example.png)
 ```
 
-6. **Document Learnings** – Jot down commands or pitfalls in the Results section.
+7. **Document Learnings** – State what the evidence supports, confidence, the main limitation, and what another group can reuse.
+8. **Prepare the report-out** – Use the Home page to walk through why, question, artifact, evidence, confidence, limitations, reuse, and next steps.
 
 ### Day 2 Checklist
 - [ ] Dataset chosen and cited
 - [ ] Analysis snippet executed
 - [ ] Figure saved to assets/results/
 - [ ] Notes captured in Results section
-
-</details>
-
-<a id="day3"></a>
-<details>
-<summary><strong>Day 3 — Synthesize &amp; Share</strong></summary>
-
-### Objectives
-- State 3-5 evidence-backed insights
-- Link each insight to an artifact
-- Name confidence, limitations, and next steps
-- Identify reusable outputs for other groups
-
-### Steps
-1. **One-sentence takeaway** – Write one specific sentence that states the core result, product, or lesson.
-2. **Core insights** – Add 3-5 insights. For each one, include what you found, why it matters, the evidence/artifact link, and confidence: High / Medium / Low.
-3. **Comms Box** – Prepare a short abstract and image:
-
-```markdown
-<!-- Short abstract placeholder -->
-In three days we created [product/output] to help [user/audience] understand or decide [specific issue].
-Our strongest evidence is [artifact/link], but [limitation] remains uncertain.
-
-<!-- Replace the image below with your artifact -->
-![Outreach Graphic](assets/results/placeholder.png)
-```
-
-4. **Limitations and reuse** – List what did not work, what not to overclaim, and anything another group can reuse.
-5. **Demo Checklist**
-   - [ ] Show the updated project page
-   - [ ] Display 2-3 evidence artifacts
-   - [ ] State confidence and one key limitation
-   - [ ] Collect feedback and record next actions
-
-### Day 3 Checklist
-- [ ] One-sentence takeaway added
-- [ ] 3-5 insights include evidence links and confidence
-- [ ] Limitations and reusable outputs listed
-- [ ] Abstract and image added
-- [ ] Demo items rehearsed
-- [ ] Next steps assigned
+- [ ] One or two claims include evidence and confidence
+- [ ] Limitations and reusable outputs are listed
+- [ ] Final report-out is ready
 
 </details>
 

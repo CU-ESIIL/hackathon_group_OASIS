@@ -1,26 +1,28 @@
-site_name: "OASIS Project Group Template"
-site_description: 'Central resource for ESIIL Summit teams'
+site_name: "OLC Climate Resiliency Hackathon · OASIS"
+site_description: 'Editable project workspace and report-out for the September 2026 OLC Climate Resiliency and Digital Sovereignty Hackathon'
 site_author: Ty Tuff
-site_url: "https://cu-esiil.github.io/Project_group_OASIS/"
+site_url: "https://cu-esiil.github.io/hackathon_group_OASIS/"
 
 # Repository
-repo_name: link to repo
-repo_url: https://github.com/CU-ESIIL/Project_group_OASIS
+repo_name: CU-ESIIL/hackathon_group_OASIS
+repo_url: https://github.com/CU-ESIIL/hackathon_group_OASIS
 edit_uri: edit/main/docs/
 # Copyright
-copyright: 'Copyright &copy; 2024 University of Colorado Boulder · MIT License'
+copyright: 'Copyright &copy; 2026 University of Colorado Boulder · MIT License'
 
 # Page tree
 nav:
   - Home: index.md
-  - Example: example.md
-  - Summit Team Sites: summit-team-sites.md
-  - Summit Team Sites Gallery: summit-team-sites-gallery.md
-  # Instructions are hidden from the sidebar for now. Uncomment this block to show them again.
-  # - Instructions:
-  #     - Day 1 — Form Your Summit Team: instructions/day1.md
-  #     - Day 2 — Build and Report Back: instructions/day2.md
-  #     - Day 3 — Synthesize and Share: instructions/day3.md
+  - OLC Example: olc-example.md
+  - Fire Example: example.md
+  - Directions:
+      - Overview: instructions.md
+      - Day 1 — Question, Evidence, and Build: instructions/day1.md
+      - Day 2 — Interpret, Steward, and Share: instructions/day2.md
+      - Public Data and Stewardship: instructions/stewardship.md
+      - Optional CubeDynamics: instructions/cubedynamics.md
+  - Facilitator Guide: facilitator-guide.md
+  # Legacy Summit team galleries remain in the repository but are not part of the Hackathon navigation.
   #- AI for Sustainability:
   #    - Defining AI: ai-for-sustainability/defining-ai.md
   #    - Defining Sustainability: ai-for-sustainability/defining-sustainability.md
@@ -36,19 +38,18 @@ nav:
       - Instance to/from GitHub: instructions/push-to-github.md
       - Instance to/from persistent storage: instructions/save-to-persistent-storage.md
   - Links:
-      - Your code: https://github.com/CU-ESIIL/Project_group_OASIS/tree/main/code
-      - Your documentation: https://github.com/CU-ESIIL/Project_group_OASIS/tree/main/documentation
-      - Your persistent storage: "https://de.cyverse.org/data/ds/iplant/home/shared/esiil/Innovation_summit/Group_1?type=folder&resourceId=1993057e-8e90-11f0-b0fa-90e2ba675364"
+      - OLC source curriculum: https://github.com/olc-techsupport/Education-Climate-Resiliency-Digital-Sovereignty/tree/main/2026%20Buildathon
+      - Your code: https://github.com/CU-ESIIL/hackathon_group_OASIS/tree/main/code
+      - Your documentation: https://github.com/CU-ESIIL/hackathon_group_OASIS/tree/main/docs
 
 
 not_in_nav: |
   data.md
   stickers.md
-  instructions.md
-  instructions/day1.md
-  instructions/day2.md
   instructions/day3.md
   project_template.md
+  summit-team-sites.md
+  summit-team-sites-gallery.md
   assets/cyverse_basics/README.md
   assets/docker_basics/README.md
   assets/template/README.md
@@ -71,7 +72,7 @@ theme:
   name: material
   custom_dir: docs/overrides
   font: false
-  logo: 'assets/oasis_logo.png'
+  logo: 'assets/esiil_content/group_logo.svg'
   favicon: 'assets/esiil_content/favicon.ico'
   # setting features for the navigation tab
   features:

@@ -1,89 +1,53 @@
 ---
-title: Using AI to Assesss Community Response to Climate Hazards
+title: OLC Climate Resiliency Hackathon Project
 public_mode_toggle: true
 ---
 
-!!! tip "How to use this page during the Summit"
-    - This page is your team’s shared workspace and final report-out page. It captures your group’s process and thinking throughout the Summit and will be used to share your work with others. 
-    
-    - Use this page as your team’s working record during the Summit and your final report-out.
-    
-    - The Summit has several different goals and thus you will use the page differently each day: Day 1 is for alignment, Day 2 is for building one useful thing, and Day 3 is for synthesis and report- out.
-    
-    - Look for the green buttons to indicate what you need to edit. 
-    
-    - Megaphones 📣 indicate which items you will be presenting during the end-of-day report-outs.
+!!! tip "Start here — September 15–16, 2026"
+    This page is your team’s shared workspace, public project story, and final report-out. Keep **Instructions on** while working, turn them **off** to preview the public page, and select **Hackathon Report Out** for the short presentation view.
 
-    - Only the items with megaphones will be visible when you hit the 'Summit Report Out' button. 
+    Follow one clear path: **Question → Evidence → Representation → Build → Interpret → Uncertainty → Stewardship → Share**.
 
-    - If you turn off 'Instructions' then you will only see the page content for public display.
-    
+    Minimum success is one focused question, one visible artifact or well-documented attempt, one evidence-backed learning, one honest uncertainty, and one responsible next step. Technical complexity is optional.
 
-# Team 1 Home: Make Me Your Own
+!!! warning "Before writing on a public site"
+    Use only material appropriate for public GitHub. Do not add culturally sensitive knowledge, protected locations, private or community-controlled data, personal information, restricted stewardship material, or claims of review or approval that have not occurred.
 
-!!! note "Day 1 directions"
-    Change the title to the name of your project.
+# Team Project: Make This Your Own
 
-    [Edit Day 1 setup in Markdown](https://github.com/CU-ESIIL/Project_group_OASIS/edit/main/docs/index.md?plain=1#L21){ .md-button target="_blank" rel="noopener" }
+!!! note "First edit"
+    Replace the page title and heading with your project name. Add a short subtitle that tells visitors what you are exploring.
 
-!!! tip "For ESIIL staff"
-    Group Number: 1
-    
-    Breakout Room #: S240
+    [Edit the team page in Markdown](https://github.com/CU-ESIIL/hackathon_group_OASIS/edit/main/docs/index.md){ .md-button target="_blank" rel="noopener" }
 
-    [ESIIL staff edit in Markdown](https://github.com/CU-ESIIL/Project_group_OASIS/edit/main/docs/index.md?plain=1#L28){ .md-button target="_blank" rel="noopener" }
-    
+*One sentence describing the question, place, or possibility your team is exploring.*
 
-![Team hero image](assets/hero/hero3.png)
+![Team hero image](assets/hero/hero.png)
 
-!!! note "How to replace the image above"
-    Upload an image that represents your project and welcome people to your page. 
-    
-    Upload your own image to `docs/assets/hero/` and replace the file named `hero.png`. Use a wide image if you can, then refresh the site preview to check how it looks.
-    Keep the file path `docs/assets/hero/hero.png` if you want the Markdown above to keep working.
+!!! note "Replace the hero image"
+    Upload a wide public-safe image to `docs/assets/hero/` and replace `hero.png`, or update the Markdown path above. Write alt text that explains the image.
 
-    [Open image folder for changing image](https://github.com/CU-ESIIL/Project_group_OASIS/tree/main/docs/assets/hero){ .md-button target="_blank" rel="noopener" }
+    [Open the hero-image folder](https://github.com/CU-ESIIL/hackathon_group_OASIS/tree/main/docs/assets/hero){ .md-button target="_blank" rel="noopener" }
 
+[See the completed OLC example](olc-example.md){ .md-button .md-button--primary }
+[See the completed fire example](example.md){ .md-button }
+[Open the Hackathon directions](instructions.md){ .md-button }
 
-[See a completed example](example.md){ .md-button }
+## People { #people }
 
-## People { #people .oasis-report-out-context }
+!!! note "Day 1 — quick introductions"
+    Add one short row per teammate. Share what you know, what you hope to learn, and which role you can take first. Roles can change as the work changes.
 
-!!! note "Day 1 task"
-    Get to know your team: share your cards (5-7 mins). Update your team roster (2-3 min).
+    [Edit People](https://github.com/CU-ESIIL/hackathon_group_OASIS/edit/main/docs/index.md){ .md-button target="_blank" rel="noopener" }
 
-    Use the in-person name cards to guide quick introductions.
-
-    | Name card prompts | Follow-up notes |
-    |---|---|
-    | ![Name card prompts for name, institution, area of expertise, research difference, and questions](assets/team/name-card-prompts.png) | ![Follow-up notes card with space for names and follow-up ideas](assets/team/name-card-followups.png) |
-
-    [Edit People in Markdown](https://github.com/CU-ESIIL/Project_group_OASIS/edit/main/docs/index.md?plain=1#L63){ .md-button target="_blank" rel="noopener" }
-
-
-| Name | Affiliation | Contact | Github |
+| Name | Affiliation | Contact | Starting role |
 |---|---|---|---|
-| | | | | | | |
+|  |  |  |  |
 
 ## Team Norms and Decision Making { #team-norms-and-decision-making }
 
-!!! note "Day 1 task"
-
-    Suggested Self-Facilitation Instructions:
-    
-    - Round Robin: Everyone shares 1 norm that they think will be important for their team during the Summit and perhaps following the Summit (2 min).
-
-    - After everyone has shared, make a list with as many norms as possible in GitHub (5–7 min).
-
-    - Vote on your top 3 ideas. (Each person gets 3 votes; you can use all your votes on 1 idea or spread them out) (2 min).
-
-    - In GitHub, move all team norms with votes to the top of the list.
-
-    | Gradients of agreement | 
-    |---|
-    | ![Gradients of agreement scale for Summit teams](assets/hero/norms.png) | 
-
-    [Edit Team Norms in Markdown](https://github.com/CU-ESIIL/Project_group_OASIS/edit/main/docs/index.md?plain=1#L87){ .md-button target="_blank" rel="noopener" }
+!!! note "Keep this fast"
+    Choose two or three norms and one simple decision rule. A five-minute agreement now can prevent a long disagreement later.
 
 Our team norms:
 
@@ -91,154 +55,202 @@ Our team norms:
 - ...
 - ...
 
-Our decision making strategy:
+Our decision rule:
 
 ...
 
-## Our product(s) 📣 { #product-direction .oasis-report-out-section .oasis-report-out-day2 }
+## Our Question 📣 { #project-question .oasis-report-out-section }
 
-!!! note "Day 2 Tasks"
-    Morning Focus: questions, hypotheses, context; add at least one visual (photo of whiteboard/notes)
+!!! note "Question → Evidence"
+    Write one question narrow enough to investigate during the Hackathon. Name what would count as progress. The question can change when the evidence shows it should.
 
-    Afternoon Focus: try a few datasets and analyses. Keep it visual, keep it simple. Update the site to reflect what you test. 
+    The three OLC pathways are parallel options, not ability levels:
 
-    [Edit content below here in Markdown](https://github.com/CU-ESIIL/Project_group_OASIS/edit/main/docs/index.md?plain=1#L106){ .md-button target="_blank" rel="noopener" }
-
-Short term:
-
-...
-
-Long term:
-
-- ...
-- ...
-
-![Day 2 morning whiteboard or notes photo](assets/whiteboards/day2_morning_whiteboard.svg)
-
-*Morning whiteboard or notes showing the question, hypotheses, and context we used to start Day 2.*
-
-## Our question(s) 📣 { #project-question .oasis-report-out-section .oasis-report-out-day2 }
+    - **Guided Explorer:** explain what available evidence shows and does not show.
+    - **Data Investigator:** compare evidence, coverage, or assumptions.
+    - **Technical Extender:** test or extend a reproducible method.
 
 Our working question:
 
 ...
 
-What would count as progress:
+What would count as progress by noon on September 16:
 
 ...
 
-## Hypotheses/Intentions [Optional: probably not relevant if you are creating an educational tool]
+!!! question "Sovereignty checkpoint 1 — Who framed the question?"
+    Who helped define it? Whose priorities does it reflect? Who might frame it differently? Do the available public data fit the question, or are they merely convenient?
 
+    Record unresolved answers honestly. Completing this prompt is not sovereignty certification or a substitute for a locally appropriate data-governance process.
 
-## Why this matters (the “upshot”) 📣 { #why-this-matters .oasis-report-out-section .oasis-report-out-day2 }
+## Why This Matters 📣 { #why-this-matters .oasis-report-out-section }
+
+!!! note "Connect the work to people without overclaiming"
+    Explain the potential value and intended audience. Do not describe an impact, partnership, consultation, or endorsement that has not happened.
 
 This matters because:
 
 ...
 
-People who could use this:
+People who might use, question, or improve this work:
 
 ...
 
-## Data sources we’re exploring 📣 { #data-exploration .oasis-report-out-section .oasis-report-out-day2 }
+## What We Tried to Build 📣 { #what-we-tried-to-build .oasis-report-out-section }
 
-!!! note "data exploration"
-    Provide a snapshot showing some initial data patterns. 
+!!! note "Representation → Build"
+    Choose the smallest useful artifact: a figure, comparison, map, notebook, workflow, model, prototype, educational resource, or clearly documented attempt. Scientific usefulness matters more than software complexity.
 
-    Add 2-4 promising data sources (links +1-line notes)    
+By the end of the Hackathon, we tried to make:
 
-![Exploration figure](assets/explorations/explore_data_plot.png)
+...
 
-*Snapshot showing initial data patterns.*
+Our chosen pathway and why it fit:
 
-Promising data sources:
+...
 
-- [Data source 1](#): ...
-- [Data source 2](#): ...
-- [Data source 3](#): ...
-- [Data source 4](#): ...
+![Working notes, sketch, or whiteboard](assets/whiteboards/hackathon_working_notes.svg)
 
-## Methods/technologies we’re testing 📣 { #methods-and-code .oasis-report-out-section .oasis-report-out-day2 }
+*Working notes showing the question, intended artifact, and evidence boundary.*
 
-!!! note "methods"
-    Add 2-4 methods/technologies we're testing (stats, models, viz).
+## Data and Evidence { #data-and-evidence }
 
-[View shared code](https://github.com/CU-ESIIL/Project_group_OASIS/tree/main/code){ .md-button }
+!!! note "Source, place, period, meaning"
+    For every important dataset, record who produced it, the place or geographic support it represents, the observation period, and what one value physically means. Add links and citations.
 
-Methods/technologies we are testing:
+| Dataset | Source | Place | Period | What it measures |
+|---|---|---|---|---|
+| ... | ... | ... | ... | ... |
 
-| Method or technology | What we tested | Early note |
+!!! warning "Public data is a boundary, not blanket permission"
+    This Hackathon uses public datasets so teams can focus on environmental data science, building, interpretation, and communication during a short event. Public availability does not mean the data represent every relevant perspective or authorize every interpretation or use.
+
+    **Accessible ≠ interpretable ≠ actionable**
+
+    - **Accessible:** Can we obtain and analyze the data?
+    - **Interpretable:** What claims can the observations support?
+    - **Actionable:** Is there enough evidence, context, relationship, review, and authority for a real decision?
+
+!!! question "Sovereignty checkpoint 2 — What does the evidence represent?"
+    Does its spatial and temporal scale match the question? What is missing? Who collected and transformed it? Could someone with different knowledge of the place interpret it differently? Should the evidence change the question?
+
+## Methods and Tools { #methods-and-tools }
+
+!!! note "Document the build as it happens"
+    Record enough detail for another person to understand what you tried. Keep failed attempts and obstacles when they teach something useful.
+
+Methods, tools, or approaches we tried:
+
+| Approach | What we did | What happened |
 |---|---|---|
 | ... | ... | ... |
-| ... | ... | ... |
-| ... | ... | ... |
-| ... | ... | ... |
 
-### Challenges identified
+[Open shared code](https://github.com/CU-ESIIL/hackathon_group_OASIS/tree/main/code){ .md-button target="_blank" rel="noopener" }
+
+### Working visual or output
+
+![Working figure, map, screenshot, or prototype](assets/figures/figure1.png)
+
+*Describe what this artifact shows, what evidence produced it, and why it matters.*
+
+### Failed attempts and useful obstacles
 
 - ...
-- ...
 
-### Visuals
+!!! info "Want to go further? CubeDynamics is optional"
+    CubeDynamics can support reproducible labeled-array workflows, but it is not required for a successful project. As of September 2026, the official project is prerelease and has no public PyPI or GitHub Release installation. Use only a facilitator-provided, checksum-verified setup, keep the scientific question ahead of the software, and see the [optional CubeDynamics guide](instructions/cubedynamics.md).
 
-![Method or workflow visual](assets/figures/figure1.png)
+## What We Made { #what-we-made }
 
-### Next Steps
+!!! note "Artifact first"
+    Link the strongest artifact directly. If it is incomplete, say what works, what does not, and what another team would need to continue.
 
-Short term: 
+- **Main artifact:** ...
+- **Code or notebook:** ...
+- **Reusable data or output:** ...
+- **How to reproduce or continue:** ...
 
-Long term: 
+## What We Learned 📣 { #what-we-learned .oasis-report-out-section }
 
-!!! note "Day 3 Tasks"
-    Sythesis: highlight 2-3 visuals that tell the story; keep text crisp. Practice a 6-minute walkthrough of the homepage. Why -> Questions -> Data/Methods -> Findings -> Next 
+!!! note "Interpret"
+    Separate the observation from the interpretation. Point to the figure, analysis, comparison, or artifact supporting every main claim.
 
-    [Edit content below here in Markdown](https://github.com/CU-ESIIL/Project_group_OASIS/edit/main/docs/index.md?plain=1#L203){ .md-button target="_blank" rel="noopener" }
+**Observation — what happened:** ...
 
+**Evidence — what supports it:** ...
 
-## Team Photo { #team-photo }
+**Interpretation — what we think it means:** ...
 
-![Team photo](assets/team/team_photo.jpg)
+![Main result or most useful artifact](assets/figures/main_result.png)
 
-*Team members and collaborators who contributed to this project.*
+*Figure 1. Write a claim-oriented caption: what pattern or result should a reader see, and what evidence boundary matters?*
 
-## Findings at a glance 📣 { #findings-at-a-glance .oasis-report-out-section .oasis-report-out-day3 }
+### Claim ladder
 
-Headline 1 — what, where, how much
+| Level | Team statement |
+|---|---|
+| **What We Observed** | ... |
+| **What We Think** | ... |
+| **What We Don’t Know** | ... |
+| **What We Should Not Claim** | ... |
+
+## What Didn’t Work { #what-didnt-work }
+
+What we tried, what happened, and what another team should know:
 
 ...
 
-Headline 2 — change/trend/contrast
+## What Remains Uncertain 📣 { #what-remains-uncertain .oasis-report-out-section }
+
+!!! note "Uncertainty is a result"
+    Name the largest evidence gap, assumption, alternative interpretation, or validation need. A precise limit is more useful than false certainty.
+
+What these data or artifacts cannot tell us:
 
 ...
 
-Headline 3 — implication for practice or policy
+What would strengthen or challenge our interpretation:
 
 ...
 
-## Visuals that tell a story 📣 { #story-visuals .oasis-report-out-section .oasis-report-out-day3 }
+!!! question "Sovereignty checkpoint 3 — Before sharing"
+    Who could be affected by this interpretation? Who is absent? Who should help interpret or review a continuation? Is everything on this page appropriate for public GitHub?
 
-![Story visual](assets/figures/main_result.png)
+    Naming a reviewer or collaborator does not imply that they reviewed, approved, authorized, or endorsed the work.
 
-*Visual 1: the main pattern or output we want people to remember.*
+## What’s Next 📣 { #whats-next .oasis-report-out-section }
 
-## What’s next? 📣 { #whats-next .oasis-report-out-section .oasis-report-out-day3 }
+!!! note "Stewardship → Share"
+    Choose one next technical step and one next relationship, interpretation, or review step. Keep them specific enough that another person could act.
 
-Short term:
+Next technical step:
+
+...
+
+Next stewardship or collaboration step:
+
+...
+
+## Who Should Be Involved Next { #who-should-be-involved-next }
+
+Potential roles or perspectives—not claims of consultation or approval:
 
 - ...
 
-Long term:
+What those people should help frame, interpret, question, or review:
 
-- ...
+...
 
-Who should see this next
+## Code, Data, Citation and Reuse { #code-data-citation-and-reuse }
 
-- ...
+!!! note "Final handoff"
+    Add stable source links, licenses or terms, citations, and concise reproduction notes. Run the [site completion coach](_site_health.md) for reminders; it is an editing aid, not scientific, ethical, sovereignty, or community approval.
 
-## Cite & Reuse { #cite-reuse }
+- **Source curriculum:** [OLC Climate Resiliency and Digital Sovereignty Learning Lab](https://github.com/olc-techsupport/Education-Climate-Resiliency-Digital-Sovereignty) [@olcClimateResiliency]
+- **Code/notebooks:** ...
+- **Data and terms:** ...
+- **Reuse notes:** ...
 
-If you use these materials, please cite:
+If you use this template, cite the OASIS repository [@oasisProjectTemplate] and preserve attribution for every external dataset, method, and artifact.
 
-Summit Team. (2026). *Project Group OASIS — Innovation Summit 2026*. https://github.com/CU-ESIIL/Project_group_OASIS
-
-License: CC-BY-4.0 unless noted. 
+{{ references }}

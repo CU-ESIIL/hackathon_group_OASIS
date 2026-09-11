@@ -1,0 +1,32 @@
+{
+  "source_curriculum": "OLC Climate Resiliency and Digital Sovereignty Learning Lab",
+  "source_repository": "https://github.com/olc-techsupport/Education-Climate-Resiliency-Digital-Sovereignty",
+  "source_commit": "a1d5b5b02c4ee23e61213069629087f00794f27f",
+  "prepared_input_sha256": {
+    "drought_monthly.csv": "c2b400a135daa36631bf35ae0dd0f422b72d8a71d11a023312aff9cbc92dbd00",
+    "streamflow_daily.csv": "73a24f5dc5d74173fc4857d42aa68b541e2d7694be9d5a51b50c842af2ffab4c"
+  },
+  "period": [
+    1990,
+    2024
+  ],
+  "years_compared": 35,
+  "drought_measure": "equal-weight annual mean PDSI for South Dakota climate divisions 7 and 8; both divisions require 12 valid months",
+  "flow_measure": "annual minimum of rolling seven-day mean daily discharge, standardized within each White River gauge",
+  "flow_gauges": {
+    "06446000": "White River near Oglala",
+    "06446500": "White River near Interior",
+    "06447000": "White River near Kadoka"
+  },
+  "flow_completeness": "at least 330 observed days per station-year and at least two included gauges per year",
+  "spearman_rho": 0.564465,
+  "pearson_r": 0.467751,
+  "interpretation": "Drier regional years often coincided with lower-flow years, but the relationship was imperfect.",
+  "limitations": [
+    "The comparison is observational and does not establish causation.",
+    "Climate divisions and gauges do not represent every place, water source, or use.",
+    "Standardization makes gauges comparable but removes their absolute-flow scale.",
+    "The rolling seven-day window may cross calendar-year boundaries.",
+    "The data do not directly measure livestock water availability, water quality, infrastructure, or community impacts."
+  ]
+}

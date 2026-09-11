@@ -22,8 +22,8 @@
   --oasis-color-green: var(--oasis-color-accent-green);
   --oasis-day-1-color: var(--oasis-color-primary-blue);
   --oasis-day-1-color-strong: var(--oasis-color-brand-900);
-  --oasis-day-2-color: var(--oasis-color-accent-blue);
-  --oasis-day-2-color-strong: #258aa5;
+  --oasis-day-2-color: var(--oasis-color-accent-green);
+  --oasis-day-2-color-strong: #005427;
   --oasis-day-3-color: var(--oasis-color-accent-green);
   --oasis-day-3-color-strong: #005427;
 

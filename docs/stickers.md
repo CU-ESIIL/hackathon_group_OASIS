@@ -1,6 +1,6 @@
 # Task Label Registry
 
-The visual task navigation workflow has been retired. These labels are kept so any task sticker assets, captions, or references use the same time-calibrated language as the Home page and directions.
+The visual task navigation workflow has been retired. This is a legacy registry for the former three-day Summit workflow; the active 1.5-day Hackathon directions are in `docs/instructions/day1.md` and `docs/instructions/day2.md`.
 
 | Sticker | Label | Main page |
 |---|---|---|

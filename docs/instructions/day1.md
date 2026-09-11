@@ -1,86 +1,99 @@
 ---
-title: Day 1 — Form Your Summit Team
+title: Day 1 — Question, Evidence, and Build
 oasis_day: 1
 extra:
   body_class: day-1
 ---
 
-# Day 1 — Form Your Summit Team
+# Day 1 — Question, Evidence, and Build
 
-Day 1 is about becoming a team before becoming a project. You will only have about **30 minutes of actual team working time** at the end of the day. Most of the day is designed to help you meet people, explore ideas, and form a team.
+**Tuesday, September 15, 2026 · full day**
 
-Because time is limited, focus only on what is essential to start Day 2 well.
+Day 1 turns a broad interest into a focused public-data question and one visible build. Update the Home page as you work so Day 2 is for interpretation and sharing, not reconstruction.
 
-By the end of Day 1, your Summit team should have:
-
-- Introduced yourselves
-- Written 2–3 team norms
-- Chosen a simple decision rule
-
-Do not try to do questions, hypotheses, product direction, data work, methods, notes cleanup, or results on Day 1.
-
-[📣 Edit the Day 1 sections](https://github.com/CU-ESIIL/Project_group_OASIS/edit/main/docs/index.md){ .md-button .md-button--primary }
+[Edit your team page](https://github.com/CU-ESIIL/hackathon_group_OASIS/edit/main/docs/index.md){ .md-button .md-button--primary target="_blank" rel="noopener" }
 [Open Home](../index.md){ .md-button }
-[See the Example](../example.md){ .md-button }
+[See the OLC example](../olc-example.md){ .md-button }
 
-## D1-A — Introduce yourselves
+## Event rhythm
 
-**Main page:** People
-
-Each person should briefly share:
-
-- What you work on
-- Why you came to the Summit
-- What you might want to create
-
-Keep this fast. One sentence per person is enough.
-
-Use the in-person name cards to guide the conversation:
-
-| Name card prompts | Follow-up notes |
+| Time | Event and team focus |
 |---|---|
-| ![Name card prompts for name, institution, area of expertise, research difference, and questions](../assets/team/name-card-prompts.png) | ![Follow-up notes card with space for names and follow-up ideas](../assets/team/name-card-followups.png) |
+| 8:30 a.m. | Check-in |
+| 9:00 a.m. | Opening |
+| 9:30–10:30 a.m. | Hackathon introduction; form teams, choose a pathway, frame a question |
+| 10:30 a.m. | Break |
+| 10:45 a.m.–noon | Inspect evidence; record source, place, period, units, coverage, and meaning |
+| Noon | Lunch lecture, including CubeDynamics as an optional extension |
+| 1:00–3:00 p.m. | Build the smallest useful artifact and document decisions |
+| 3:00 p.m. | Break |
+| 3:15–4:15 p.m. | Continue the build; produce a working visual, output, or useful obstacle |
+| 4:15–4:45 p.m. | Peer evidence and stewardship review |
+| 4:45–5:00 p.m. | Save work and write the first Day 2 task |
+| Evening | Supper and optional help |
 
-## D1-B — Create team norms
+Times follow the source OLC event schedule; facilitators may announce local adjustments.
 
-**Main page:** Team Norms and Decision Making
+## 9:30–10:30 — Form, focus, and choose a pathway
 
-Write **2–3 norms only**. Keep them simple and actionable.
+Add team members, two or three norms, and one decision rule. Then choose a question that the available public evidence can meaningfully investigate during the event.
 
-Good norms sound like working agreements, not generic values.
+Select or combine a pathway:
 
-Use the [Team Norms activity](../ai-for-sustainability/norms.md) if your team wants a worksheet for recording decisions and checking agreement.
+- **Guided Explorer:** inspect and explain a pattern.
+- **Data Investigator:** compare coverage or analytical choices.
+- **Technical Extender:** reproduce or extend a documented method.
 
-![Summit team norms worksheet](../assets/hero/norms-panel.png)
+Before moving on, complete sovereignty checkpoint 1 on Home: who framed the question, whose priorities it reflects, and whether the available data truly fit.
 
-Examples:
+## 10:45–noon — Audit the evidence
 
-- We will pause when someone says they are lost.
-- We will make decisions visible before moving on.
-- We will treat everything as a draft until the team agrees it is final.
+For every important source, record:
 
-## D1-C — Choose how you will make decisions
+- Producer and stable source link
+- Place or geographic support
+- Observation period and completeness
+- Units and physical meaning
+- Transformations already applied
+- Important omissions and tempting overinterpretations
 
-**Main page:** Team Norms and Decision Making
+By lunch, write one scoped question and complete at least one row of the Data and Evidence table. Read [Public Data and Stewardship](stewardship.md) before using public availability as a reason for reuse.
 
-Pick one simple rule.
+## 1:00–4:15 — Represent and build
 
-Examples:
+Choose the smallest artifact that can teach the team something: a figure, comparison, map, notebook, workflow, model, prototype, educational resource, or documented failure.
 
-- Quick vote for small choices
-- Consensus for major direction changes
-- Move forward unless someone has a strong objection
+As you work:
 
-Add one sentence describing your decision rule.
+- Keep the question ahead of the software.
+- Save a working figure or screenshot early.
+- Record methods and decisions in plain language.
+- Keep failed attempts if they reveal a limit or save future effort.
+- Revise the question if evidence coverage does not match it.
+- Link directly to code, notebooks, data provenance, and outputs.
+
+CubeDynamics is optional. Use it only through a facilitator-provided verified environment; see the [optional guide](cubedynamics.md).
+
+## 4:15–4:45 — Peer evidence and stewardship review
+
+Trade pages with another team. Reviewers should ask, not certify:
+
+- Can I tell what one data value means, where it represents, and when it was observed?
+- Does the artifact support the written observation?
+- Is interpretation clearly separated from observation?
+- What is missing or represented poorly?
+- Could any public wording imply authority, consultation, or approval that has not occurred?
+- What is the smallest useful task for tomorrow morning?
 
 ## Day 1 finish line
 
-You are done when you have alignment, not results.
+Before leaving, Home should contain:
 
-Before leaving, your page should have:
+- A team, simple working norms, and one decision rule
+- One focused question and a selected pathway
+- Source, place, period, and meaning for the main evidence
+- One visible artifact, early result, or well-documented obstacle
+- Notes on what happened and what remains uncertain
+- One named Day 2 finish task with an owner
 
-- People
-- 2–3 team norms
-- One decision rule
-
-If you have those, you are exactly on track.
+Save the work where it will persist. Do not add restricted or sensitive material to public GitHub.

@@ -1,155 +1,99 @@
 ---
-layout: page
-title: Directions
-permalink: /instructions/
+title: Hackathon Directions
 ---
 
-# Directions: 3-Day Science Sprint
+# OLC Climate Resiliency Hackathon Directions
 
-Welcome! These guides help your team use this site as a live, visual record of your sprint. Each day has a different rhythm because the agenda gives teams different amounts of work time.
+These pages translate the [OLC Climate Resiliency and Digital Sovereignty Learning Lab curriculum](https://github.com/olc-techsupport/Education-Climate-Resiliency-Digital-Sovereignty) into a focused OASIS workflow for **September 15–16, 2026** [@olcClimateResiliency]. The source curriculum remains authoritative for the event schedule, teaching materials, prepared public datasets, and pathway notebooks.
 
-- **Day 1 →** [Form Your Summit Team](instructions/day1.md)
-- **Day 2 →** [Build and Report Back](instructions/day2.md)
-- **Day 3 →** [Synthesize and Share](instructions/day3.md)
+- **Day 1 — September 15:** [Question, Evidence, and Build](instructions/day1.md)
+- **Day 2 — September 16:** [Interpret, Steward, and Share](instructions/day2.md)
+- **Throughout:** [Public Data and Stewardship](instructions/stewardship.md)
+- **Optional:** [Want to Go Further with CubeDynamics?](instructions/cubedynamics.md)
 
-The Home page is the editable blank template your team fills out during the Summit. The Example page is a completed model that shows how a filled-in project story can look. Edit Home, not Example.
+[Edit your team page](https://github.com/CU-ESIIL/hackathon_group_OASIS/edit/main/docs/index.md){ .md-button .md-button--primary target="_blank" rel="noopener" }
+[Open the completed OLC example](olc-example.md){ .md-button }
 
-For a completed model, see the [Example Project Page](example.md).
+## Your 1.5-day journey
 
-[📣 Edit the Home page](https://github.com/CU-ESIIL/Project_group_OASIS/edit/main/docs/index.md){ .md-button .md-button--primary }
+**Question → Evidence → Representation → Build → Interpret → Uncertainty → Stewardship → Share**
 
-## Summit Report Out workflow
+| Stage | Ask | Leave behind |
+|---|---|---|
+| Question | What can we investigate responsibly in the available time? | One focused question and a definition of progress |
+| Evidence | What do the public data measure, where, when, and for whom? | Source, place, period, meaning, and limitations |
+| Representation | What is included, transformed, averaged, or missing? | A defensible analytical or design choice |
+| Build | What is the smallest useful thing we can make? | One visible artifact or documented attempt |
+| Interpret | What happened, and what do we think it means? | Observation, evidence, and interpretation |
+| Uncertainty | What can we not claim? | A precise evidence boundary |
+| Stewardship | Who should help frame, interpret, or review a continuation? | Named roles and unresolved needs, without implied approval |
+| Share | What can another person understand and reuse? | A public-safe page and short report-out |
 
-Your team page is both your workspace and your final report-out page. During the Summit, use the edit buttons to update the sections for each day. On Day 3, use the **Summit Report Out** button to view the page in a clean Summit Report Out layout.
+## Three pathways, one standard of care
 
-For the final report out, focus on:
+Choose the support pathway that fits the team’s question and working style. These are parallel approaches, not prestige levels.
 
-- What question or challenge your team worked on
-- What you built, tested, mapped, wrote, or designed
-- What changed in your thinking
-- What someone else could do next
-- Images that make the work easier to understand
+- **Guided Explorer:** inspect, visualize, and explain what the evidence shows and does not show.
+- **Data Investigator:** compare datasets, coverage, transformations, assumptions, or sensitivity.
+- **Technical Extender:** test, reproduce, or extend a method while documenting enough for someone else to rerun it.
 
-## Work rhythm
+Teams can combine pathways or switch when the evidence changes the question. A clear figure or documented limitation can be more useful than a complicated but uninterpretable model.
 
-- **Day 1:** about 30 minutes of actual team work time. Focus on alignment, not results.
-- **Day 2:** about 3.5 to 4 hours of total team work time. Build one useful thing.
-- **Day 3:** about 4 to 4.5 hours of team time. Synthesize, polish, and report out.
+## Minimum success
 
-## CRT cloud workflow
+By noon on September 16, every team should have:
 
-In this workflow, your work moves between three connected places:
+- One focused question
+- One visible artifact, early result, or well-documented attempt
+- One evidence-backed learning
+- One honest uncertainty or failed approach
+- One responsible next step
+- A page containing only material appropriate for public sharing
 
-- **JupyterLab** is the temporary active workspace where you run notebooks, edit files, and test ideas.
-- **GitHub** is for code, Markdown, notebooks, small figures, collaboration, and the public site source.
-- **Persistent storage** is for large data, intermediate outputs, model results, and files that must survive beyond the running container.
+## One page, three views
 
-A simple rule: **work in JupyterLab, push code and text to GitHub, and save large data or outputs to persistent storage.**
+The Home page serves three purposes without asking participants to maintain slides separately:
 
-Use the Cloud Triangle pages when you need to move work between those places:
+- **Instructions on:** prompts and examples appear while the team works.
+- **Instructions off:** the same Markdown becomes a cleaner public project page.
+- **Hackathon Report Out:** only the marked story sections appear for the final walkthrough.
 
-1. [Connect instance to GitHub](instructions/link-to-github.md)
-2. [Instance to/from GitHub](instructions/push-to-github.md)
-3. [Instance to/from persistent storage](instructions/save-to-persistent-storage.md)
+The report-out should move through the question, importance, intended build, learning, uncertainty, and next step. Aim for **5–6 minutes** unless facilitators set a different allotment based on the number of teams.
 
-## Editing this project site
+## Public-data boundary
 
-Most Summit participants should only edit Markdown files.
+The Hackathon works with prepared public environmental datasets. Public availability makes short-event analysis possible; it does not establish that the evidence is locally sufficient, culturally complete, appropriate for every use, or ready to guide a real decision.
 
-You can safely edit:
+**Accessible ≠ interpretable ≠ actionable.** Read [Public Data and Stewardship](instructions/stewardship.md) before publishing interpretations.
 
-- the Home page content
-- the People list on the Home page
-- notes, figures, links, and team updates
-- references in `references.bib`
+## Editing workflow
 
-You should avoid editing:
+Most participants only need to edit `docs/index.md`, upload artifacts under `docs/assets/`, and add BibTeX records to `docs/references.bib`.
 
-- HTML templates
-- CSS files
-- theme overrides
-- site configuration
+1. Use an **Edit** button on Home or edit `docs/index.md` in GitHub.
+2. Replace `...` and default artifacts as the work develops.
+3. Add source links, captions, and evidence boundaries while they are fresh.
+4. Commit small changes often and refresh the published site.
+5. Preview with **Instructions off** and **Hackathon Report Out**.
+6. Review the non-blocking [site completion coach](_site_health.md).
 
-Those files control layout and styling. They are intentionally separated from the content so the team page is easier to edit without breaking the site.
-
-## How to edit the Home page
-
-Use this loop every time you update the editable Home page:
-
-1. Open the Home page and click **Edit this page**, or open `docs/index.md` in GitHub.
-2. Replace the blank template text directly in the Markdown.
-3. Upload images and files to the matching folder under `docs/assets/`.
-4. Reference images with relative paths, such as `assets/figures/main_result.png`.
-5. Scroll to **Commit changes** in GitHub and commit before moving on.
-6. Wait for GitHub Pages to rebuild, then refresh the public site.
-7. If old text still appears, you edited the wrong file or the site has not rebuilt yet.
-
-## Template instructions toggle
-
-The sidebar has a small **Instructions on/off** toggle.
-
-- Leave instructions on while editing during the workshop.
-- Turn instructions off to preview the cleaner public-facing page.
-- The setting is saved in your browser.
-
-Write future editor instructions as Markdown notes, not as public paragraphs:
-
-```markdown
-!!! note "Day 2 task"
-    Replace this note with short instructions for editors.
-    Keep public-facing project text outside this note.
-```
-
-Instruction blocks with task guidance are hidden when instructions are turned off on the Home page.
+The coach finds common blank-template and link issues. It does not validate science, ethics, sovereignty, community fit, consultation, or approval.
 
 ## Where files go
 
-| Put this here | Use it for |
+| Location | Use |
 |---|---|
-| `docs/index.md` | Editable Home team page |
-| `docs/example.md` | Completed model team page |
-| `docs/assets/hero/` | Main banner or team identity image |
-| `docs/assets/whiteboards/` | Whiteboard photos and brainstorm sketches |
-| `docs/assets/explorations/` | Early plots, screenshots, rough maps, notebook screenshots |
-| `docs/assets/figures/` | Polished figures and final visuals |
-| `docs/assets/report-out/` | Report-out banners and image manifest files |
-| `docs/assets/people/` | Optional team photos or profile images |
-| `docs/assets/team/` | Team photos or headshots |
-| `docs/assets/files/` | PDFs, briefs, slides, and downloadable materials |
-| Innovation Summit learner files | Source profiles that can be linked from the People table |
-| `docs/references.bib` | BibTeX references cited from Markdown |
-| `code/` | Scripts, notebooks, and reusable analysis code |
-| `documentation/` | Longer notes that should not clutter the public Home page |
+| `docs/index.md` | Editable team page and report-out |
+| `docs/olc-example.md` | Completed, annotated OLC public-data example |
+| `docs/example.md` | Preserved advanced fire-analysis example |
+| `docs/assets/hero/` | Public-safe banner image |
+| `docs/assets/whiteboards/` | Working notes and sketches |
+| `docs/assets/explorations/` | Early plots, screenshots, and rough maps |
+| `docs/assets/figures/` | Main figures and final visuals |
+| `docs/assets/files/` | Briefs and other downloads |
+| `code/` | Scripts, notebooks, and reproducible workflows |
+| `docs/references.bib` | BibTeX records used by `[@citationKey]` references |
 
-## Copy-paste patterns
+Large or restricted data do not belong in the public repository. Follow facilitator-provided storage instructions and the data steward’s terms.
 
-Image with caption:
-
-```markdown
-![Short alt text](assets/figures/example.png)
-*Figure 1. One sentence explaining what this visual shows and why it matters.*
-```
-
-Data source:
-
-```markdown
-- **Dataset name:** one sentence on what it contains and why we need it. [Link](https://example.org)
-```
-
-People table row:
-
-[Find learner files in the Innovation Summit 2026 repository](https://github.com/CU-ESIIL/Innovation-Summit-2026/tree/main/docs/learners)
-
-```markdown
-| [Jane Doe](https://github.com/CU-ESIIL/Innovation-Summit-2026/blob/main/docs/learners/jane-doe.md) | Learner / Example University | Fire spread visualization | GIS, Python, field context |
-```
-
-Edit the People table on `docs/index.md` directly. Add one row per person and keep each cell short enough to read quickly.
-
-Citation:
-
-```markdown
-This sentence uses a source [@oasisProjectTemplate].
-```
-
-Add BibTeX entries to `docs/references.bib`, then cite them with `[@citationKey]` on `docs/index.md`. Keep the existing references marker on pages where the generated reference list should appear.
+{{ references }}

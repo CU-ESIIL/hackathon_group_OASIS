@@ -20,10 +20,11 @@ def on_config(config, **kwargs):
     report = DOCS / "_site_health.md"
     if not report.exists():
         report.write_text(
-            "Site Health\n\n"
+            "# Site Health\n\n"
             "⚠ Attention needed\n\n"
             "⚠ Missing required file: docs/_site_health.md\n\n"
-            "This report is generated automatically during the site build. Fix these items in the repository to improve the site.\n",
+            "This report is generated automatically during the site build. Warnings do not block publishing.\n\n"
+            "The completion coach is an editing aid, not scientific, ethical, sovereignty, community, or approval review.\n",
             encoding="utf-8",
         )
     return config
@@ -311,7 +312,7 @@ def on_page_markdown(markdown, page, config, files, **kwargs):
         markdown = f"{PUBLIC_MODE_MARKER}\n\n{markdown}"
 
     oasis_day = str((page.meta or {}).get("oasis_day", "")).strip()
-    if oasis_day in {"1", "2", "3"} and "oasis-day-marker" not in markdown:
+    if oasis_day in {"1", "2"} and "oasis-day-marker" not in markdown:
         markdown = f"{DAY_MARKER_TEMPLATE.format(day=oasis_day)}\n\n{markdown}"
 
     if PEOPLE_GALLERY_MARKER in markdown:
