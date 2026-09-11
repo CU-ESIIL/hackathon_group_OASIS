@@ -1,6 +1,6 @@
 # OLC Climate Resiliency Hackathon · OASIS Template
 
-
+We're watching ty edit. 
 This repository is the OASIS team-workspace template for the OLC Climate Resiliency and Digital Sovereignty Hackathon on September 15–16, 2026. It adapts the [source OLC curriculum](https://github.com/olc-techsupport/Education-Climate-Resiliency-Digital-Sovereignty) while preserving the reusable OASIS instructions, public-page, and report-out views.
 
 The website is built from the docs/ folder using MkDocs.
