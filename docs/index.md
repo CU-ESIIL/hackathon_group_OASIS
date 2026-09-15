@@ -1,5 +1,5 @@
 ---
-title: Scary truth about our Water Quantity(workshopping)
+title: Sweatlodge Contamination 
 public_mode_toggle: true
 ---
 Adding sample text here. 
