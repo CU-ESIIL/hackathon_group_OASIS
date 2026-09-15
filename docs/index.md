@@ -37,6 +37,8 @@ Adding sample text here.
 ## People { #people }
 
 !!! note "Day 1 — quick introductions"
+Tokata Stands
+Kiahna Standing Bear 
     Add one short row per teammate. Share what you know, what you hope to learn, and which role you can take first. Roles can change as the work changes.
 
     [Edit People](https://github.com/CU-ESIIL/hackathon_group_OASIS/edit/main/docs/index.md){ .md-button target="_blank" rel="noopener" }
