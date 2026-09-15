@@ -44,7 +44,7 @@ Kiahna Standing Bear
     [Edit People](https://github.com/CU-ESIIL/hackathon_group_OASIS/edit/main/docs/index.md){ .md-button target="_blank" rel="noopener" }
 
 | Name | Affiliation | Contact | Starting role |
-|---|---|---|---|
+|Tokata Stands|---|---|---|
 |  |  |  |  |
 
 ## Team Norms and Decision Making { #team-norms-and-decision-making }
