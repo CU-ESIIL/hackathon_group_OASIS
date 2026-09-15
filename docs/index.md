@@ -1,6 +1,5 @@
 ---
-title: Open your eyes into the Truth about our Water
-public_mode_toggle: true
+title: Environmental and Social Impacts of Datacenters
 ---
 Adding sample text here. 
 
