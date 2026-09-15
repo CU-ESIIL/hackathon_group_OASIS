@@ -14,7 +14,7 @@ Adding sample text here.
 !!! warning "Before writing on a public site"
     Use only material appropriate for public GitHub. Do not add culturally sensitive knowledge, protected locations, private or community-controlled data, personal information, restricted stewardship material, or claims of review or approval that have not occurred.
 
-# Scary truth about our Water Quantity
+# Sweatlodge Contamination
 
 !!! note "First edit"
     Replace the page title and heading with your project name. Add a short subtitle that tells visitors what you are exploring.
